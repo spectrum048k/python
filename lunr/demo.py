@@ -10,7 +10,7 @@ from lunr import lunr
 
 index = lunr(ref='idx', fields=('text',), documents=documents)
 
-spanish = index.search("spanish")   # search for word "spanish"
+spanish = index.search("spanish")   # search for the word "spanish"
 
 for i in spanish:
     print(documents[int(i['ref'])])
